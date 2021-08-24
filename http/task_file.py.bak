@@ -1,0 +1,22 @@
+from locust import HttpUser, between, task
+import requests
+token = ""
+
+def authLogin(url):
+    global token
+    data = {
+        "username" : "",
+        "password" : ""
+    }
+    http = requests.get(url)
+    token = http.content
+
+authLogin("https://google.com")
+
+class WebsiteUser(HttpUser):
+    wait_time = between(0, 5)
+
+    @task(1)
+    def task_login(self):
+        self.client.post('/login', data={'username': 'admin', 'password': 'admin'}, headers={'none': 'none'})
+        print(token)

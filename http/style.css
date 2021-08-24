@@ -1,0 +1,22 @@
+body{
+    background-color: #173529;
+    color: #fff;
+}
+
+.dashboard{
+  
+}
+
+div.content{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+.show_json{
+    width: 50%;
+}
+.dashboard{
+    width: 40%; 
+}
