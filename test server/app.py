@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request, jsonify
 from flask_restful import Resource, Api, request
 
 app = Flask(__name__)
@@ -9,15 +9,15 @@ class Login(Resource):
         username = request.form['username']
         password = request.form['password']
         if username == "admin" and password == "admin":
-            return {"message" : "ok"}, 200
-        else: 
-            return {"message" : "error"}, 400
+            return jsonify({"token" : "asdsad1213"})
+        if username == "admin2" and password == "admin2":
+                return jsonify({"token" : "admin2"})
+       
 
 class DumpLogin(Resource):
     def get(self):
-         username = "admin" 
-         password = "admin"
-         return {"message" : username }
+         print(request.headers)
+         return {"message" : "ok" }
 
 class DoNothing(Resource):
     def get(self):

@@ -1,88 +1,41 @@
 {
+
+   "token_generator" : [
+
+      {
+         "name" : "john",
+         "method" : "post",
+         "parameter" : 
+         {
+            "username" : "admin2",
+            "password" : "admin2"
+         },
+         "expire_time" : "30",
+         "url" : "http://127.0.0.1:5000/login"
+         
+      }
+
+   ],
+
+
    "tasks":[
+
       {
-         "task_name":"FeatureFlags_1",
-         "path" : "/api/FeatureFlags/IsEnabled/5330",
+         "task_name":"dump",
+         "path" : "/dump",
          "weight":1,
          "method":"get",
-         "data" : "",
-         "headers":{"Authorization:" : "Bearer qJCDsLpR5fI34n0hS3PCJJvPvzdDoiNcObyhBWsP-_VVyp7tLSbZtgaT-DfrzT6LzGGjyHq8sHN0J-LFB5jhTw38SzcWaajwVvfFpN9JpIrBjZWK7OA8wIxN0lEo2lYhmKqrfnpXbfZhmEDB8W1IWYzpcNFw8jIlfhFAWI1ApW0W98fa3tG_6INgJiPpCFmws-JWKeehzEXugThMgzBn-7X4wuuHAo6CYKuwEZL5LDmEGL0bmwB_08g9_I48kM7-Bi9CnkNdAzdOvk3kclp4ILZLb79S5xWid5AHtFf9M7IoNjnD9QApy7cxh4wWLeO6xzfM9sByasP-ER8c-ZujFLPcGFYPAv6E7HeIkrFgsxTCKOanEOIjMb1ycbAHmWK_jw5GNYkDG877nOVIKBYCEVTaYwt-KQ-VyMm5M73fbeVl-pJFhw5qongbpv5m-rjoVWjqkAD605yf0pbOQn5n2YBDBgORHohcGZUzpeYnlwVJ3Z_n2EBLdpFg6elqQpdTYxtDbOS70eUK_zblR5ECmfK5ZwiXokARaFgr1ZVOCJNVXp9gwu_qBL_b6kxzVoyHDLKCR6xcOh5mPKuTNEQmRgaSMNeMOiU9JfWT_k2AwPO6N6EcTBTMWAXauZXvry8PlBIeszRhmZ0_SQO-LEpth5VtSg4iABFRvpRWh1wIfEu9H0OjHUv690pUclOb4HMish0ZGi7e4eizkt6C8V7W2JZR58ytQQSL88BZVjEGzrccNZOCrkVboD7gdOkUQt8bVHQcE40otwethH7z698pbrlY6Pnw6fP4dQznHPdeoPo"},
+         "headers":
+         {
+            "Authorization" : "$token_john", 
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
          "data" : ""
-      },
-
-      {
-         "task_name":"FeatureFlags_2",
-         "path" : "api/FeatureFlags/IsEnabled/5176",
-         "weight":1,
-         "method":"get",
-         "headers":{"Authorization:" : "Bearer qJCDsLpR5fI34n0hS3PCJJvPvzdDoiNcObyhBWsP-_VVyp7tLSbZtgaT-DfrzT6LzGGjyHq8sHN0J-LFB5jhTw38SzcWaajwVvfFpN9JpIrBjZWK7OA8wIxN0lEo2lYhmKqrfnpXbfZhmEDB8W1IWYzpcNFw8jIlfhFAWI1ApW0W98fa3tG_6INgJiPpCFmws-JWKeehzEXugThMgzBn-7X4wuuHAo6CYKuwEZL5LDmEGL0bmwB_08g9_I48kM7-Bi9CnkNdAzdOvk3kclp4ILZLb79S5xWid5AHtFf9M7IoNjnD9QApy7cxh4wWLeO6xzfM9sByasP-ER8c-ZujFLPcGFYPAv6E7HeIkrFgsxTCKOanEOIjMb1ycbAHmWK_jw5GNYkDG877nOVIKBYCEVTaYwt-KQ-VyMm5M73fbeVl-pJFhw5qongbpv5m-rjoVWjqkAD605yf0pbOQn5n2YBDBgORHohcGZUzpeYnlwVJ3Z_n2EBLdpFg6elqQpdTYxtDbOS70eUK_zblR5ECmfK5ZwiXokARaFgr1ZVOCJNVXp9gwu_qBL_b6kxzVoyHDLKCR6xcOh5mPKuTNEQmRgaSMNeMOiU9JfWT_k2AwPO6N6EcTBTMWAXauZXvry8PlBIeszRhmZ0_SQO-LEpth5VtSg4iABFRvpRWh1wIfEu9H0OjHUv690pUclOb4HMish0ZGi7e4eizkt6C8V7W2JZR58ytQQSL88BZVjEGzrccNZOCrkVboD7gdOkUQt8bVHQcE40otwethH7z698pbrlY6Pnw6fP4dQznHPdeoPo"},
-         "data":""
-      },
-
-      {
-         "task_name":"getCountries",
-         "path" : "api/geo/countries",
-         "weight":1,
-         "method":"get",
-         "headers":{"Authorization:" : "Bearer qJCDsLpR5fI34n0hS3PCJJvPvzdDoiNcObyhBWsP-_VVyp7tLSbZtgaT-DfrzT6LzGGjyHq8sHN0J-LFB5jhTw38SzcWaajwVvfFpN9JpIrBjZWK7OA8wIxN0lEo2lYhmKqrfnpXbfZhmEDB8W1IWYzpcNFw8jIlfhFAWI1ApW0W98fa3tG_6INgJiPpCFmws-JWKeehzEXugThMgzBn-7X4wuuHAo6CYKuwEZL5LDmEGL0bmwB_08g9_I48kM7-Bi9CnkNdAzdOvk3kclp4ILZLb79S5xWid5AHtFf9M7IoNjnD9QApy7cxh4wWLeO6xzfM9sByasP-ER8c-ZujFLPcGFYPAv6E7HeIkrFgsxTCKOanEOIjMb1ycbAHmWK_jw5GNYkDG877nOVIKBYCEVTaYwt-KQ-VyMm5M73fbeVl-pJFhw5qongbpv5m-rjoVWjqkAD605yf0pbOQn5n2YBDBgORHohcGZUzpeYnlwVJ3Z_n2EBLdpFg6elqQpdTYxtDbOS70eUK_zblR5ECmfK5ZwiXokARaFgr1ZVOCJNVXp9gwu_qBL_b6kxzVoyHDLKCR6xcOh5mPKuTNEQmRgaSMNeMOiU9JfWT_k2AwPO6N6EcTBTMWAXauZXvry8PlBIeszRhmZ0_SQO-LEpth5VtSg4iABFRvpRWh1wIfEu9H0OjHUv690pUclOb4HMish0ZGi7e4eizkt6C8V7W2JZR58ytQQSL88BZVjEGzrccNZOCrkVboD7gdOkUQt8bVHQcE40otwethH7z698pbrlY6Pnw6fP4dQznHPdeoPo"},
-         "data":""
-      },
-
-      {
-         "task_name":"FeatureFlags_3",
-         "path" : "api/FeatureFlags/IsEnabled/5188",
-         "weight":1,
-         "method":"get",
-         "headers":{"Authorization:" : "Bearer qJCDsLpR5fI34n0hS3PCJJvPvzdDoiNcObyhBWsP-_VVyp7tLSbZtgaT-DfrzT6LzGGjyHq8sHN0J-LFB5jhTw38SzcWaajwVvfFpN9JpIrBjZWK7OA8wIxN0lEo2lYhmKqrfnpXbfZhmEDB8W1IWYzpcNFw8jIlfhFAWI1ApW0W98fa3tG_6INgJiPpCFmws-JWKeehzEXugThMgzBn-7X4wuuHAo6CYKuwEZL5LDmEGL0bmwB_08g9_I48kM7-Bi9CnkNdAzdOvk3kclp4ILZLb79S5xWid5AHtFf9M7IoNjnD9QApy7cxh4wWLeO6xzfM9sByasP-ER8c-ZujFLPcGFYPAv6E7HeIkrFgsxTCKOanEOIjMb1ycbAHmWK_jw5GNYkDG877nOVIKBYCEVTaYwt-KQ-VyMm5M73fbeVl-pJFhw5qongbpv5m-rjoVWjqkAD605yf0pbOQn5n2YBDBgORHohcGZUzpeYnlwVJ3Z_n2EBLdpFg6elqQpdTYxtDbOS70eUK_zblR5ECmfK5ZwiXokARaFgr1ZVOCJNVXp9gwu_qBL_b6kxzVoyHDLKCR6xcOh5mPKuTNEQmRgaSMNeMOiU9JfWT_k2AwPO6N6EcTBTMWAXauZXvry8PlBIeszRhmZ0_SQO-LEpth5VtSg4iABFRvpRWh1wIfEu9H0OjHUv690pUclOb4HMish0ZGi7e4eizkt6C8V7W2JZR58ytQQSL88BZVjEGzrccNZOCrkVboD7gdOkUQt8bVHQcE40otwethH7z698pbrlY6Pnw6fP4dQznHPdeoPo"},
-         "data":""
-      },
-
-      {
-         "task_name":"Candidates",
-         "path" : "api/Candidates/14466",
-         "weight":1,
-         "method":"get",
-         "headers":{"Authorization:" : "Bearer qJCDsLpR5fI34n0hS3PCJJvPvzdDoiNcObyhBWsP-_VVyp7tLSbZtgaT-DfrzT6LzGGjyHq8sHN0J-LFB5jhTw38SzcWaajwVvfFpN9JpIrBjZWK7OA8wIxN0lEo2lYhmKqrfnpXbfZhmEDB8W1IWYzpcNFw8jIlfhFAWI1ApW0W98fa3tG_6INgJiPpCFmws-JWKeehzEXugThMgzBn-7X4wuuHAo6CYKuwEZL5LDmEGL0bmwB_08g9_I48kM7-Bi9CnkNdAzdOvk3kclp4ILZLb79S5xWid5AHtFf9M7IoNjnD9QApy7cxh4wWLeO6xzfM9sByasP-ER8c-ZujFLPcGFYPAv6E7HeIkrFgsxTCKOanEOIjMb1ycbAHmWK_jw5GNYkDG877nOVIKBYCEVTaYwt-KQ-VyMm5M73fbeVl-pJFhw5qongbpv5m-rjoVWjqkAD605yf0pbOQn5n2YBDBgORHohcGZUzpeYnlwVJ3Z_n2EBLdpFg6elqQpdTYxtDbOS70eUK_zblR5ECmfK5ZwiXokARaFgr1ZVOCJNVXp9gwu_qBL_b6kxzVoyHDLKCR6xcOh5mPKuTNEQmRgaSMNeMOiU9JfWT_k2AwPO6N6EcTBTMWAXauZXvry8PlBIeszRhmZ0_SQO-LEpth5VtSg4iABFRvpRWh1wIfEu9H0OjHUv690pUclOb4HMish0ZGi7e4eizkt6C8V7W2JZR58ytQQSL88BZVjEGzrccNZOCrkVboD7gdOkUQt8bVHQcE40otwethH7z698pbrlY6Pnw6fP4dQznHPdeoPo"},
-         "data":""
-      },
-
-      {
-         "task_name":"ProfileStatus",
-         "path" : "api/ProfileStatus/Lookup",
-         "weight":1,
-         "method":"get",
-         "headers":{"Authorization:" : "Bearer qJCDsLpR5fI34n0hS3PCJJvPvzdDoiNcObyhBWsP-_VVyp7tLSbZtgaT-DfrzT6LzGGjyHq8sHN0J-LFB5jhTw38SzcWaajwVvfFpN9JpIrBjZWK7OA8wIxN0lEo2lYhmKqrfnpXbfZhmEDB8W1IWYzpcNFw8jIlfhFAWI1ApW0W98fa3tG_6INgJiPpCFmws-JWKeehzEXugThMgzBn-7X4wuuHAo6CYKuwEZL5LDmEGL0bmwB_08g9_I48kM7-Bi9CnkNdAzdOvk3kclp4ILZLb79S5xWid5AHtFf9M7IoNjnD9QApy7cxh4wWLeO6xzfM9sByasP-ER8c-ZujFLPcGFYPAv6E7HeIkrFgsxTCKOanEOIjMb1ycbAHmWK_jw5GNYkDG877nOVIKBYCEVTaYwt-KQ-VyMm5M73fbeVl-pJFhw5qongbpv5m-rjoVWjqkAD605yf0pbOQn5n2YBDBgORHohcGZUzpeYnlwVJ3Z_n2EBLdpFg6elqQpdTYxtDbOS70eUK_zblR5ECmfK5ZwiXokARaFgr1ZVOCJNVXp9gwu_qBL_b6kxzVoyHDLKCR6xcOh5mPKuTNEQmRgaSMNeMOiU9JfWT_k2AwPO6N6EcTBTMWAXauZXvry8PlBIeszRhmZ0_SQO-LEpth5VtSg4iABFRvpRWh1wIfEu9H0OjHUv690pUclOb4HMish0ZGi7e4eizkt6C8V7W2JZR58ytQQSL88BZVjEGzrccNZOCrkVboD7gdOkUQt8bVHQcE40otwethH7z698pbrlY6Pnw6fP4dQznHPdeoPo"},
-         "data":""
-      },
-
-     
-
-      {
-         "task_name":"Countries2",
-         "path" : "api/geo/countries/PH",
-         "weight":1,
-         "method":"get",
-         "headers":{"Authorization:" : "Bearer qJCDsLpR5fI34n0hS3PCJJvPvzdDoiNcObyhBWsP-_VVyp7tLSbZtgaT-DfrzT6LzGGjyHq8sHN0J-LFB5jhTw38SzcWaajwVvfFpN9JpIrBjZWK7OA8wIxN0lEo2lYhmKqrfnpXbfZhmEDB8W1IWYzpcNFw8jIlfhFAWI1ApW0W98fa3tG_6INgJiPpCFmws-JWKeehzEXugThMgzBn-7X4wuuHAo6CYKuwEZL5LDmEGL0bmwB_08g9_I48kM7-Bi9CnkNdAzdOvk3kclp4ILZLb79S5xWid5AHtFf9M7IoNjnD9QApy7cxh4wWLeO6xzfM9sByasP-ER8c-ZujFLPcGFYPAv6E7HeIkrFgsxTCKOanEOIjMb1ycbAHmWK_jw5GNYkDG877nOVIKBYCEVTaYwt-KQ-VyMm5M73fbeVl-pJFhw5qongbpv5m-rjoVWjqkAD605yf0pbOQn5n2YBDBgORHohcGZUzpeYnlwVJ3Z_n2EBLdpFg6elqQpdTYxtDbOS70eUK_zblR5ECmfK5ZwiXokARaFgr1ZVOCJNVXp9gwu_qBL_b6kxzVoyHDLKCR6xcOh5mPKuTNEQmRgaSMNeMOiU9JfWT_k2AwPO6N6EcTBTMWAXauZXvry8PlBIeszRhmZ0_SQO-LEpth5VtSg4iABFRvpRWh1wIfEu9H0OjHUv690pUclOb4HMish0ZGi7e4eizkt6C8V7W2JZR58ytQQSL88BZVjEGzrccNZOCrkVboD7gdOkUQt8bVHQcE40otwethH7z698pbrlY6Pnw6fP4dQznHPdeoPo"},
-         "data":""
-      },
-
-      {
-         "task_name":"Countries3",
-         "path" : "api/geo/countries/PH/regions",
-         "weight":1,
-         "method":"get",
-         "headers":{"Authorization:" : "Bearer qJCDsLpR5fI34n0hS3PCJJvPvzdDoiNcObyhBWsP-_VVyp7tLSbZtgaT-DfrzT6LzGGjyHq8sHN0J-LFB5jhTw38SzcWaajwVvfFpN9JpIrBjZWK7OA8wIxN0lEo2lYhmKqrfnpXbfZhmEDB8W1IWYzpcNFw8jIlfhFAWI1ApW0W98fa3tG_6INgJiPpCFmws-JWKeehzEXugThMgzBn-7X4wuuHAo6CYKuwEZL5LDmEGL0bmwB_08g9_I48kM7-Bi9CnkNdAzdOvk3kclp4ILZLb79S5xWid5AHtFf9M7IoNjnD9QApy7cxh4wWLeO6xzfM9sByasP-ER8c-ZujFLPcGFYPAv6E7HeIkrFgsxTCKOanEOIjMb1ycbAHmWK_jw5GNYkDG877nOVIKBYCEVTaYwt-KQ-VyMm5M73fbeVl-pJFhw5qongbpv5m-rjoVWjqkAD605yf0pbOQn5n2YBDBgORHohcGZUzpeYnlwVJ3Z_n2EBLdpFg6elqQpdTYxtDbOS70eUK_zblR5ECmfK5ZwiXokARaFgr1ZVOCJNVXp9gwu_qBL_b6kxzVoyHDLKCR6xcOh5mPKuTNEQmRgaSMNeMOiU9JfWT_k2AwPO6N6EcTBTMWAXauZXvry8PlBIeszRhmZ0_SQO-LEpth5VtSg4iABFRvpRWh1wIfEu9H0OjHUv690pUclOb4HMish0ZGi7e4eizkt6C8V7W2JZR58ytQQSL88BZVjEGzrccNZOCrkVboD7gdOkUQt8bVHQcE40otwethH7z698pbrlY6Pnw6fP4dQznHPdeoPo"},
-         "data":""
-      },
-
-      {
-         "task_name":"Countries4",
-         "path" : "api/geo/countries/PH/region/PAM/cities",
-         "weight":1,
-         "method":"get",
-         "headers":{"Authorization:" : "Bearer qJCDsLpR5fI34n0hS3PCJJvPvzdDoiNcObyhBWsP-_VVyp7tLSbZtgaT-DfrzT6LzGGjyHq8sHN0J-LFB5jhTw38SzcWaajwVvfFpN9JpIrBjZWK7OA8wIxN0lEo2lYhmKqrfnpXbfZhmEDB8W1IWYzpcNFw8jIlfhFAWI1ApW0W98fa3tG_6INgJiPpCFmws-JWKeehzEXugThMgzBn-7X4wuuHAo6CYKuwEZL5LDmEGL0bmwB_08g9_I48kM7-Bi9CnkNdAzdOvk3kclp4ILZLb79S5xWid5AHtFf9M7IoNjnD9QApy7cxh4wWLeO6xzfM9sByasP-ER8c-ZujFLPcGFYPAv6E7HeIkrFgsxTCKOanEOIjMb1ycbAHmWK_jw5GNYkDG877nOVIKBYCEVTaYwt-KQ-VyMm5M73fbeVl-pJFhw5qongbpv5m-rjoVWjqkAD605yf0pbOQn5n2YBDBgORHohcGZUzpeYnlwVJ3Z_n2EBLdpFg6elqQpdTYxtDbOS70eUK_zblR5ECmfK5ZwiXokARaFgr1ZVOCJNVXp9gwu_qBL_b6kxzVoyHDLKCR6xcOh5mPKuTNEQmRgaSMNeMOiU9JfWT_k2AwPO6N6EcTBTMWAXauZXvry8PlBIeszRhmZ0_SQO-LEpth5VtSg4iABFRvpRWh1wIfEu9H0OjHUv690pUclOb4HMish0ZGi7e4eizkt6C8V7W2JZR58ytQQSL88BZVjEGzrccNZOCrkVboD7gdOkUQt8bVHQcE40otwethH7z698pbrlY6Pnw6fP4dQznHPdeoPo"},
-         "data":""
       }
 
    ]
+
+
+
 }
