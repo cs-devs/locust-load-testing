@@ -2,15 +2,6 @@ import json
 
 task_set = open ("./json/task.json", "r").read()
 
-#,
-      #{
-     #    "task_name":"task_donothing",
-     #    "path" : "/do_nothing",
-      #   "weight":3,
-      #   "method":"get",
-      #   "headers":{"cookie" : "abc"},
-      #   "data":""
-      #}
 
 
 task_set = json.loads(task_set)

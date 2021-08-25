@@ -1,2 +1,3 @@
-locust/env/
-locust/test server/env/
+http/env/
+test server/env/
+http/.env
