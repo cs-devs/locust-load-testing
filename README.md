@@ -1,12 +1,12 @@
 # locust-load-testing
 
 
-#Multiple structure
+#Multiple project file structure
 
 * project
-  * <project name>
+  * project name
     * json
     * task
-  * <project name>
+  * project name
     * json
     * task
