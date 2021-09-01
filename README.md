@@ -3,6 +3,6 @@
 
 #Project structure
 >project
-  >project-name
+  >project-name\n
     >json
     >task
