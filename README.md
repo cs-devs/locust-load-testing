@@ -4,10 +4,10 @@
 # Multiple project file structure
 
 * project
-  * project name
+  * [project name]
     * json
     * task
-  * project name
+  * [project name]
     * json
     * task
 
@@ -15,4 +15,4 @@
 * python3 create.py --build-project <project name>
  
  # Run locust
- * python3 run.py <project name>
+ * python3 run.py [project name]
