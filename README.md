@@ -7,9 +7,7 @@
   * [project name]
     * json
     * task
-  * [project name]
-    * json
-    * task
+ 
 
 # Build the locust script via task.json file
 * Static token variable
