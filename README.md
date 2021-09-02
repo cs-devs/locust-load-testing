@@ -10,7 +10,7 @@
  
 
 # Build the locust script via task.json file
-* Static token variable
+* Static token variable: $token
 
 
        {
