@@ -1,0 +1,103 @@
+{
+   "tasks":[
+      {
+         "task_name":"FeatureFlags",
+         "path" : "api/FeatureFlags",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data" : ""
+      },
+
+      {
+         "task_name":"countriesList",
+         "path" : "api/geo/countries",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+      {
+         "task_name":"countriesDetails",
+         "path" : "api/geo/countries/PH",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+      {
+         "task_name":"regions",
+         "path" : "api/geo/countries/PH/regions",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+      {
+         "task_name":"cities",
+         "path" : "api/geo/countries/PH/region/PLW/cities",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+      {
+         "task_name":"Candidates",
+         "path" : "api/Candidates/14713",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "Bearer JQEdwXpnFRJWWtWTlk-8IsoTPbIb4ZEKeELtRRZqE0IkGyKsQ8Y_LIfzoA1IVnnqrHe9b_MV12qAvjDSv_Ula8xJa9DscIzZTdtznFS8Bk_5xiG9NmBq-XxZGPAJo14C7s4Ibd1tMO6wdEDHT-XZ2H_tMBjqONPCFO7JpQn3B_TkiZomTOzS0yYd3etqsPgsIQId2uw359xFt7uTMQ8W6ypRS_zhdHNyMs1xjOqXaebmJdu2t1sxskLW5JBuXej5IrA5jI_q2ZDLdT_vl0S5g4FDf3HpukgqKHGEqlVDH2Sc6UXa0J7g2i7c96aB0ThYhKkrFL6N84x9e_ZqV50_aWLqB8cSfyTBja-36A9QNmSpJVC3RD1zVLybVs_X8QlXbyMGaYnQTHJUsPmoGLroIy1asFe1ASW3SXwAHP0S2zbd4KcHj6pSsIcxRoD8rYlhOzqEGmuXCU9G6vnoVPpB3rg8xdOcVrFq7n7f2lC5rURB-RKNZO4ELF5aDohrWdOUo9LLb5HBtbmpATgyIuGB-ivb804u0VFHGfEKe8Y3502gbtqC4m3WLLOLjLgktHVq0FMDRJqEqMRt_26n4FIZy537z6nQhxcKw4DfFTLwB1fXoSUFYtYATD0D1PoJu89On4lE-EWjK9ENtGE0ANNDKa2_s-H8Nd_n_jXcuyiHlSx41azQlKAlETLUW3CuZ3k8ix6Xop0MpYZ3xV69tG63l0EvGvGqUuklpBI5DBXdfuXRcHm5ym0LsJdikRbHHvXHcumDrMSXCu-U9DCTFjrpaxyO1nHUYMrTiPEUPC3tysM",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+
+      },
+
+      {
+         "task_name":"GetApplicationStatus",
+         "path" : "api/Candidates/GetApplicationStatus/14713",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "Bearer JQEdwXpnFRJWWtWTlk-8IsoTPbIb4ZEKeELtRRZqE0IkGyKsQ8Y_LIfzoA1IVnnqrHe9b_MV12qAvjDSv_Ula8xJa9DscIzZTdtznFS8Bk_5xiG9NmBq-XxZGPAJo14C7s4Ibd1tMO6wdEDHT-XZ2H_tMBjqONPCFO7JpQn3B_TkiZomTOzS0yYd3etqsPgsIQId2uw359xFt7uTMQ8W6ypRS_zhdHNyMs1xjOqXaebmJdu2t1sxskLW5JBuXej5IrA5jI_q2ZDLdT_vl0S5g4FDf3HpukgqKHGEqlVDH2Sc6UXa0J7g2i7c96aB0ThYhKkrFL6N84x9e_ZqV50_aWLqB8cSfyTBja-36A9QNmSpJVC3RD1zVLybVs_X8QlXbyMGaYnQTHJUsPmoGLroIy1asFe1ASW3SXwAHP0S2zbd4KcHj6pSsIcxRoD8rYlhOzqEGmuXCU9G6vnoVPpB3rg8xdOcVrFq7n7f2lC5rURB-RKNZO4ELF5aDohrWdOUo9LLb5HBtbmpATgyIuGB-ivb804u0VFHGfEKe8Y3502gbtqC4m3WLLOLjLgktHVq0FMDRJqEqMRt_26n4FIZy537z6nQhxcKw4DfFTLwB1fXoSUFYtYATD0D1PoJu89On4lE-EWjK9ENtGE0ANNDKa2_s-H8Nd_n_jXcuyiHlSx41azQlKAlETLUW3CuZ3k8ix6Xop0MpYZ3xV69tG63l0EvGvGqUuklpBI5DBXdfuXRcHm5ym0LsJdikRbHHvXHcumDrMSXCu-U9DCTFjrpaxyO1nHUYMrTiPEUPC3tysM",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      }
+
+   ]
+}
