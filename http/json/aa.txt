@@ -1,0 +1,132 @@
+{
+   "tasks":[
+      {
+         "task_name":"FeatureFlags_1",
+         "path" : "api/FeatureFlags/IsEnabled/5330",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data" : ""
+      },
+
+      {
+         "task_name":"FeatureFlags_2",
+         "path" : "api/FeatureFlags/IsEnabled/5176",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+      {
+         "task_name":"getCountries",
+         "path" : "api/geo/countries",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+      {
+         "task_name":"FeatureFlags_3",
+         "path" : "api/FeatureFlags/IsEnabled/5188",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+      {
+         "task_name":"Candidates",
+         "path" : "api/Candidates/14713",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "Bearer xhdAv35TBILIT3Wvnw-_CTc1-NZFdFthBDfRS-2-ACuf8FhRKAb_MDDoikj0YPuCyqpdS_FS3jY2q90tK2ErE-AikFd0fNeJ8GOIqYdw4TEm6mnFBdDDiwDW8UbkyM484Gp45eny2I6BbpVtvRGrzN2826ir797JNvIN8Ub0BcawAY42mkEDN9zrF29moEP52Ac74K3EJjbdQM16O_n1QD2UvteKEnmdnMg81wd4ocH9HSrhHx909DoBz4Xrn1eIm8qq3KAzjepiflKn0Wr8_SV0r_XHNBLw1Cp26NETXBQl-bznkm9PN3lUUYPVe8Kq0YmrJdMaI8XZhvi6BWLG8OeKD5QPCXtXiM5OXwPni12GLK2hte26Ugb91NUHZLA1Rb3Lu_8a8jZbpLaTfn8X0w20bop6o6oDNRCXW6oaN8Ur1qtymd1pUQVsEKQZVIDEFv3zYcqaGtVfpoEqzNpJX-44WBBeXv4N8x3x6dadI93qCIsgy28qzo1SxOViihi4c-UtjIg40XE2eDT5acnHFdDNS9rsIdzgIpaxfCeqJHtOPVN_r5tO9AXj36xoGi8cLdh8LCFlnPXbLHG7Rh9W5kTahD5Yg_QzXbgkKMyvAkE8qYaOpaIsufL0NFAmykPk15RBJv6VTfCk-yfXc-ZTGTnSpkSwFGX6mgUQ2G9Bs8AiH5GHGWFBeOjg2wbbs5R4Cr1X4qsconCMGnfLoLS37jGHj-9i8m68mDL0VRSz_24z2LS356SZN7t0pSJWbyxU6WzEnf0brmzuBlnw1RuXyuytKPbXqg8jECievjjh8l4",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+      {
+         "task_name":"ProfileStatus",
+         "path" : "api/ProfileStatus/Lookup",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+     
+
+      {
+         "task_name":"Countries2",
+         "path" : "api/geo/countries/PH",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+      {
+         "task_name":"Countries3",
+         "path" : "api/geo/countries/PH/regions",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      },
+
+      {
+         "task_name":"Countries4",
+         "path" : "api/geo/countries/PH/region/PAM/cities",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token",
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data":""
+      }
+
+   ]
+}
