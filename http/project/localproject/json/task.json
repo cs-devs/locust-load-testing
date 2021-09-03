@@ -32,7 +32,22 @@
             "Cookie" : "abc"
          },
          "data" : ""
+      },
+
+      {
+         "task_name":"login",
+         "path" : "/login",
+         "weight":3,
+         "method":"post",
+         "headers":
+         {
+            "Authorization" : "123abc", 
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data" : {"username" : "admin", "password" : "admin"}
       }
+
 
    ]
 

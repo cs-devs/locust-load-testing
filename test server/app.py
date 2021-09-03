@@ -24,6 +24,12 @@ class DoNothing(Resource):
         #print(request.headers)
         return {"message" : "ok"}
 
+class uploadText(Resource):
+    def put(self):
+        print(request.headers)
+        return {"message" : "ok" }
+
+
 api.add_resource(Login, '/login')
 api.add_resource(DumpLogin, '/dump')
 api.add_resource(DoNothing, "/do_nothing")

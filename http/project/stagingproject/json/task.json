@@ -1,0 +1,56 @@
+{
+
+   "token_generator" : [
+
+      {
+         "name" : "john",
+         "method" : "post",
+         "parameter" : 
+         {
+            "username" : "admin2",
+            "password" : "admin2"
+         },
+         "expire_time" : "30",
+         "url" : "http://127.0.0.1:5000/login"
+         
+      }
+
+   ],
+
+
+   "tasks":[
+
+      {
+         "task_name":"dump",
+         "path" : "/dump",
+         "weight":1,
+         "method":"get",
+         "headers":
+         {
+            "Authorization" : "$token_john", 
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data" : ""
+      },
+
+      {
+         "task_name":"login",
+         "path" : "/login",
+         "weight":3,
+         "method":"post",
+         "headers":
+         {
+            "Authorization" : "123abc", 
+            "Cache-control" : "disable",
+            "Cookie" : "abc"
+         },
+         "data" : {"username" : "admin", "password" : "admin"}
+      }
+
+
+   ]
+
+
+
+}

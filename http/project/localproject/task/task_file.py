@@ -14,3 +14,7 @@ class WebsiteUser(HttpUser):
     def dump(self):
         self.client.get('/dump', headers={'Authorization' : os.getenv('john'),'Cache-control': 'disable', 'Cookie': 'abc'})
 
+    @task(3)
+    def login(self):
+        self.client.post('/login', data={'username': 'admin', 'password': 'admin'}, headers={'Authorization': '123abc', 'Cache-control': 'disable', 'Cookie': 'abc'})
+
