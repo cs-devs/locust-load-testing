@@ -20,12 +20,12 @@ def addTasks(json):
     save_py.write(_token_generator)
 
     try: ### Token dynamic
-        token = json['token_generator']
+        token_data = json['token_generator']
         
-        for token in token:
-           print(token) 
+        for token_data in token_data:
+           print(token_data) 
         #    save_py.write("tokenGenerator('%s', %s, '%s', %s, '%s')\n" % (token["name"],token["expire_time"], token["method"], token["parameter"], token["url"]))
-        save_py.write("thread = threading.Thread(target=tokenGenerator, args=('%s',%s,'%s',%s,'%s',))\nthread.start()" % (token["name"],token["expire_time"], token["method"], token["parameter"], token["url"]))
+        save_py.write("thread = threading.Thread(target=tokenGenerator, args=('%s',%s,'%s',%s,'%s',))\nthread.start()" % (token_data["name"],token_data["expire_time"], token_data["method"], token_data["parameter"], token_data["url"]))
         save_py.write("\n\n")
     except Exception as error:
         print(error)
