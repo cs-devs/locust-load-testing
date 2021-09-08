@@ -202,13 +202,23 @@ args = parser.parse_args()
 
 print(args.build_task)
 for filename in findProject('project', '*.json'):
-    if filename.split("/")[1] == args.build_task:
-        print(filename)
-        addTasks(filename)
+    try:
+        if filename.split("/")[1] == args.build_task:
+            print(filename)
+            addTasks(filename)
+    except:
+        if filename.split("\\")[1] == args.build_task:
+            print(filename)
+            addTasks(filename)
 
 
 print(args.build_task_seq)
 for filename in findProject('project', '*.json'):
-    if filename.split("/")[1] == args.build_task_seq:
-        print(filename)
-        seqTasks(filename)
+    try:
+        if filename.split("/")[1] == args.build_task:
+            print(filename)
+            addTasks(filename)
+    except:
+        if filename.split("\\")[1] == args.build_task:
+            print(filename)
+            addTasks(filename)

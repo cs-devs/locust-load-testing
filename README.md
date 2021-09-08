@@ -1,3 +1,7 @@
+#Suported Platform
+Windows 7, 10 - Tested
+Ubuntu 18 - Tested
+
 # Multiple project file structure
 
 * project

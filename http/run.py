@@ -10,7 +10,28 @@ def findProject(directory, pattern):
 
 
 for filename in findProject('project', 'task_file.py'):
-    if filename.split("/")[1] == sys.argv[1]:
-        task="python3 -m locust -f " + str(filename)
-        print(task)
-        os.system(task)
+    try:
+        if filename.split("/")[1] == sys.argv[1]:
+                task="python3 -m locust -f " + str(filename)
+                print(task)
+                result = os.system(task)
+                if result == 9009:
+                    task="python -m locust -f " + str(filename)
+                    print(task)
+                    result = os.system(task)
+                    if result == 9009:
+                        print("Error: Invalid project")
+           
+
+    except:
+        if filename.split("\\")[1] == sys.argv[1]:
+            task="python3 -m locust -f " + str(filename)
+            print(task)
+            result = os.system(task)
+            if result == 9009:
+                    task="python -m locust -f " + str(filename)
+                    print(task)
+                    result = os.system(task)
+                    if result == 9009:
+                        print("Error: Invalid project")
+           
